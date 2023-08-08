@@ -1,0 +1,33 @@
+name: "webhook"
+repository: github.com/khulnasoft-labs/vul-plugin-webhook
+version: "0.0.1"
+usage: vul webhook -- <plugin args> -- <vul args>
+description: |-
+  A Vul plugin that sends the vul results to a webhook endpoint.
+  Usage: vul webhook -- <plugin args> -- <vul args>
+platforms:
+- selector:
+    os: linux
+    arch: amd64
+  uri: https://github.com/khulnasoft-labs/vul-plugin-webhook/releases/download/v0.0.1/vul-webhook_0.0.1_Linux_64bit.tar.gz
+  bin: ./vul-webhook
+- selector:
+    os: linux
+    arch: arm
+  uri: https://github.com/khulnasoft-labs/vul-plugin-webhook/releases/download/v0.0.1/vul-webhook_0.0.1_Linux_ARM.tar.gz
+  bin: ./vul-webhook
+- selector:
+    os: linux
+    arch: arm64
+  uri: https://github.com/khulnasoft-labs/vul-plugin-webhook/releases/download/v0.0.1/vul-webhook_0.0.1_Linux_ARM64.tar.gz
+  bin: ./vul-webhook
+- selector:
+    os: darwin
+    arch: amd64
+  uri: https://github.com/khulnasoft-labs/vul-plugin-webhook/releases/download/v0.0.1/vul-webhook_0.0.1_macOS_64bit.tar.gz
+  bin: ./vul-webhook
+- selector:
+    os: darwin
+    arch: arm64
+  uri: https://github.com/khulnasoft-labs/vul-plugin-webhook/releases/download/v0.0.1/vul-webhook_0.0.1_macOS_ARM64.tar.gz
+  bin: ./vul-webhook
