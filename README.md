@@ -2,7 +2,7 @@
 
 ## Installation
 ```shell
-vul plugin install github.com/aquasecurity/vul-plugin-webhook
+vul plugin install github.com/khulnasoft-lab/vul-plugin-webhook
 ```
 
 ## Usage

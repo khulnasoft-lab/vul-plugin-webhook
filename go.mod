@@ -1,4 +1,4 @@
-module github.com/khulnasoft-labs/vul-plugin-webhook
+module github.com/khulnasoft-lab/vul-plugin-webhook
 
 go 1.18
 
