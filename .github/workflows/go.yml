@@ -37,7 +37,7 @@ jobs:
       run: make test
 
     - name: Run Vul vulnerability scanner in repo mode
-      uses: aquasecurity/trivy-action@0.12.0
+      uses: aquasecurity/trivy-action@0.15.0
       with:
         scan-type: 'fs'
         ignore-unfixed: true
@@ -52,7 +52,7 @@ jobs:
         sarif_file: 'vul-results.sarif'
 
     - name: Run Vul vulnerability scanner in IaC mode
-      uses: aquasecurity/trivy-action@0.12.0
+      uses: aquasecurity/trivy-action@0.15.0
       with:
         scan-type: 'config'
         hide-progress: false
